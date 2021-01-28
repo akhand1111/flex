@@ -16,6 +16,14 @@ addons:
     - texinfo
     - texlive
 
+arch:
+    - amd64
+    - arm64-graviton2
+
+virt: lxd
+
+group: edge
+
 before_script:
     - ./.travis/install-gettext.sh
     - ./.travis/install-automake.sh
